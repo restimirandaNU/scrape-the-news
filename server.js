@@ -20,8 +20,8 @@ app.engine('handlebars', exphbs({
 }));
 app.set('view engine', 'handlebars');
 
-//connecting to MongoDB
-mongoose.connect('mongodb://redditdbuser:Chicago!143@redditscraper-shard-00-00-jvezr.mongodb.net:27017,redditscraper-shard-00-01-jvezr.mongodb.net:27017,redditscraper-shard-00-02-jvezr.mongodb.net:27017/test?ssl=true&replicaSet=redditscraper-shard-0&authSource=admin&retryWrites=true');
+//connecting to MongoDB user:redditdbuser password: Chicago!143
+mongoose.connect('mongodb://mongodb://verge:Chicago!143@ds131512.mlab.com:31512/heroku_q65c335f');
 
 //mongoose.connect('mongodb://localhost/scraped_news');
 
@@ -36,6 +36,9 @@ var routes = require('./controller/controller.js');
 app.use('/', routes);
 
 var port = process.env.PORT || 3000;
-app.listen(port, function(){
-  console.log('Listening on PORT ' + port);
+var MONGODB_URI=process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+mongoose.connect(MONGODB_URI);
+
+//app.listen(port, function(){
+ // console.log('Listening on PORT ' + port);
 });
