@@ -21,7 +21,7 @@ app.engine('handlebars', exphbs({
 app.set('view engine', 'handlebars');
 
 //connecting to MongoDB
-mongoose.connect('');
+mongoose.connect('mongodb://redditdbuser:Chicago!143@redditscraper-shard-00-00-jvezr.mongodb.net:27017,redditscraper-shard-00-01-jvezr.mongodb.net:27017,redditscraper-shard-00-02-jvezr.mongodb.net:27017/test?ssl=true&replicaSet=redditscraper-shard-0&authSource=admin&retryWrites=true');
 
 //mongoose.connect('mongodb://localhost/scraped_news');
 
