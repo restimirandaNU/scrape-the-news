@@ -20,8 +20,8 @@ app.engine('handlebars', exphbs({
 }));
 app.set('view engine', 'handlebars');
 
-//connecting to MongoDB user:redditdbuser password: Chicago!143
-mongoose.connect('mongodb://mongodb://verge:Chicago!143@ds131512.mlab.com:31512/heroku_q65c335f');
+//connecting to MongoDB password: Chicago!143
+mongoose.connect('mongodb://verge:Chicago!143@ds131512.mlab.com:31512/heroku_q65c335f');
 
 //mongoose.connect('mongodb://localhost/scraped_news');
 
@@ -41,4 +41,3 @@ mongoose.connect(MONGODB_URI);
 
 //app.listen(port, function(){
  // console.log('Listening on PORT ' + port);
-});
