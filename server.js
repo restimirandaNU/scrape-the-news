@@ -21,7 +21,7 @@ app.engine('handlebars', exphbs({
 app.set('view engine', 'handlebars');
 
 //connecting to MongoDB password: Chicago!143
-mongoose.connect('mongodb://verge:Chicago!143@ds131512.mlab.com:31512/heroku_q65c335f');
+//mongoose.connect('mongodb://verge:Chicago!143@ds131512.mlab.com:31512/heroku_q65c335f');
 
 //mongoose.connect('mongodb://localhost/scraped_news');
 
@@ -39,5 +39,7 @@ var port = process.env.PORT || 3000;
 var MONGODB_URI=process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
 mongoose.connect(MONGODB_URI);
 
-//app.listen(port, function(){
- // console.log('Listening on PORT ' + port);
+app.listen(port, function(){
+console.log('Listening on PORT ' + port);
+
+});
