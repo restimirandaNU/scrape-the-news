@@ -18,3 +18,16 @@ https://scraping-node.herokuapp.com/articles
 <img width="1680" alt="screen shot 2019-03-03 at 7 07 04 pm" src="https://user-images.githubusercontent.com/43328718/53705222-6e13a900-3de8-11e9-8a2b-363fd661c8f0.png">
 
 ## Technlogy Used:
+Node.js
+Handlebars - http://handlebarsjs.com/
+MongoDB - https://www.mongodb.com/download-center#community
+Mongoose - http://mongoosejs.com/docs/
+express NPM Package - https://www.npmjs.com/package/express
+express-handlebars NPM Package - https://www.npmjs.com/package/express-handlebars
+cheerio NPM Package - https://www.npmjs.com/package/cheerio
+body-parser NPM Package - https://www.npmjs.com/package/body-parser
+morgan NPM Package - https://www.npmjs.com/package/morgan
+request NPM Package - https://www.npmjs.com/package/request
+
+## Author
+Resti Miranda - NU Coding Bootcamp
